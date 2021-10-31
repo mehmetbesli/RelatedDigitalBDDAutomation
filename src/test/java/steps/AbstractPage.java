@@ -25,8 +25,7 @@ abstract class AbstractPage {
     protected void navigateTo(String url) {
         driver.get(url);
         driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-        //Wait(100);
-        System.out.println("Web application launched");
+        System.out.println(url+" opened");
     }
 
     protected void untilElementAppear(By by) {
